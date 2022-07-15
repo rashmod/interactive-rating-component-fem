@@ -1,0 +1,161 @@
+html {
+	font-size: 62.5%;
+	font-family: 'Overpass', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	min-height: 100vh;
+	background-color: hsl(216, 12%, 8%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: hsl(217, 12%, 63%);
+
+	gap: 3rem;
+}
+
+.card {
+	background-color: hsl(215, 20%, 16%);
+	padding: 1.5rem;
+	border-radius: 1.5rem;
+	width: 22rem;
+}
+
+.first img {
+	background-color: hsl(209, 27%, 18%);
+	height: 3rem;
+	padding: 1rem;
+	border-radius: 50%;
+}
+
+.heading {
+	color: white;
+	margin-top: 1rem;
+}
+
+.desc {
+	font-size: 0.9rem;
+	margin-top: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.rating {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+}
+
+.rating button {
+	background-color: hsl(209, 27%, 18%);
+	display: inline-block;
+	height: 3rem;
+	width: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	border-radius: 50%;
+	border: none;
+	color: hsl(217, 12%, 63%);
+	font-size: 1rem;
+
+	cursor: pointer;
+}
+
+.rating button:hover {
+	background-color: hsl(217, 12%, 63%);
+	color: hsl(216, 12%, 8%);
+}
+
+.rating button:active,
+.rating button:focus,
+.rating .picked {
+	background-color: hsl(25, 97%, 53%);
+}
+
+.submit-btn {
+	border: none;
+	background-color: hsl(25, 97%, 53%);
+	width: 100%;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1rem;
+	padding: 1rem;
+	border-radius: 2rem;
+	letter-spacing: 0.2rem;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	color: hsl(25, 97%, 53%);
+	background-color: white;
+}
+
+.second {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 2.2rem;
+}
+.second img {
+	height: 7rem;
+}
+
+.second .heading {
+	color: hsl(25, 97%, 53%);
+	background-color: hsl(209, 27%, 18%);
+	padding: 0.5rem 1rem;
+	font-size: 0.9rem;
+	border-radius: 2rem;
+	margin-bottom: 1.7rem;
+	margin-top: 1.2rem;
+}
+
+.second .subheading {
+	color: white;
+}
+
+.second .desc {
+	line-height: 1.5rem;
+}
+
+.hide {
+	display: none;
+}
+
+@media screen and (max-width: 1440px) {
+	.card {
+		width: 27rem;
+		padding: 2rem;
+	}
+
+	.heading {
+		font-size: 1.7rem;
+		margin-top: 2rem;
+	}
+
+	.desc {
+		font-size: 1rem;
+		line-height: 1.7rem;
+	}
+
+	.second {
+		padding-top: 2.5rem;
+	}
+
+	.second .heading {
+		font-size: 1.1rem;
+		margin-top: 2.3rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.second .subheading {
+		font-size: 1.7rem;
+	}
+}
